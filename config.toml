@@ -101,10 +101,11 @@ enableGitInfo = true # use git commit log to generate lastmod record # 可根据
 
   [params.giscus]         # giscus is a comment system based on GitHub Discussions. see https://giscus.app
     enable = true
-    repo = "xianmin/comments---xianmin.org"
-    repoId = "MDEwOlJlcG9zaXRvcnkxNDAyNTY2MDI="
+    
+    repo = "nemorix/nemorix.github.io"
+    repoId = "R_kgDOKoPsBg"
     category = "Announcements"
-    categoryId = "DIC_kwDOCFwlWs4CRRxW"
+    categoryId = "DIC_kwDOKoPsBs4CbgpP"
     # mapping = "pathname"
     # strict = 0
     # reactionsEnabled = 1
@@ -116,16 +117,16 @@ enableGitInfo = true # use git commit log to generate lastmod record # 可根据
 
   [params.search.google]    # google custom search, see https://cse.google.com
     enable = true
-    id = "002186711602136249422:q1gkomof_em"
+    id = "614f2485595c945a6"
     title = "Search"
 
   [params.gitInfo]
-    gitRepo = "https://github.com/xianmin/xianmin.org"
+    gitRepo = "https://github.com/nemorix/nemorix.github.io"
     showCommitMessage = true
 
   [params.reward]                                         # 文章打赏
     enable = true
-    wechat = "/reward_wechat.png"           # 微信二维码
+    #wechat = "/reward_wechat.png"           # 微信二维码
     # alipay = "/reward_alipay.jpg"           # 支付宝二维码
 
   [params.social]                                         # 社交链接
@@ -135,7 +136,7 @@ enableGitInfo = true # use git commit log to generate lastmod record # 可根据
     # d-facebook = "http://localhost:1313"
     # e-linkedin = "http://localhost:1313"
     # f-google = "http://localhost:1313"
-    g-github = "https://github.com/xianmin"
+    g-github = "https://github.com/nemorix"
     # h-weibo = "https://weibo.com/xianmin12"
     # i-zhihu = "https://www.zhihu.com/people/xian-min"
     # j-douban = "https://www.douban.com/people/xianmin12/"
