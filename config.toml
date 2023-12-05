@@ -28,7 +28,7 @@ enableGitInfo = true # use git commit log to generate lastmod record # 可根据
   identifier = "home"
   pageref = "/"
 [[menu.main]]
-  name = "文章"
+  name = "全部文章"
   weight = 20
   identifier = "archives"
   pageref = "/post/"
@@ -47,7 +47,16 @@ enableGitInfo = true # use git commit log to generate lastmod record # 可根据
   weight = 45
   identifier = "about"
   url = "/about/"
-
+[[menu.main]]
+  name = "致谢"
+  weight = 50
+  identifier = "acknowledgments"
+  url = "/acknowledgments/"
+[[menu.main]]
+  name = "订阅"
+  weight = 60
+  identifier = "feed"
+  url = "/index.xml"
 
 [params]
   since = "2023"            # Site creation time          # 站点建立时间
