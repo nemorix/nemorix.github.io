@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "c4b6fc77b2c59bdd",
+    "type": "split",
+    "children": [
+      {
+        "id": "51529048b2617b20",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2771103fa71c43f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/2023-12-05.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4fcf6e53a4c91b66",
+    "type": "split",
+    "children": [
+      {
+        "id": "85e7f795118c3a51",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f1ce9ea9e03bc78",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6d5aca52ff445441",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#第一个稳定",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c2d1cff1b17dd769",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a2451ddb8c63d9a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "64a9b3ac3398cdf5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "84a656cb8be4f7a4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/posts/2023-12-05.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2534fe081bcf66f8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/posts/2023-12-05.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e3d573374509c85c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "85952a4b87a03e67",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/posts/2023-12-05.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "2771103fa71c43f7",
+  "lastOpenFiles": [
+    "content/posts/2023-12-05.md",
+    "content/posts",
+    "content/新建文件夹",
+    "templates/hogo.md",
+    "templates/新建文本文档.txt",
+    "templates",
+    "新建文件夹"
+  ]
+}
