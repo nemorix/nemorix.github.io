@@ -4,6 +4,7 @@ title = "nemorix"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "hugo-theme-stack"
+buildFuture = true #渲染未来文章，解决时区问题导致的文章不显示的问题
 
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 10                                             # （可选）首页显示的文章条目数量，默认为10

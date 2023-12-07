@@ -1,14 +1,14 @@
 ---
 title: hugo+github博客搭建
 date: 2023-12-07 10:44:49
-lastmod: 2023-12-07 15:45:56
+lastmod: 2023-12-07 16:57:30
 draft: false
 tags:
   - 环境配置
 categories:
   - Hugo
 author: nemorix
-comment: true
+comment: false
 toc: true
 contentCopyright: <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>
 reward: false
@@ -19,10 +19,10 @@ mathjax: true
 打开搜索引擎，搜索建立个人博客，hugo+白嫖GitHub.io映入眼帘。hugo是Go语言开发的静态博客系统，环境配置比较简单，可以直接将md文件发布到博客上；github提供仓库的page服务，只需创建一个githubID.github.io的仓库，并且配置好page，就可以白嫖域名了，nice！并且github的action可以支持自动发布博客，只需配置好workflow即可。以下是具体流程。
 ## hugo配置
 首先便是在本地配置好hugo环境。由于我用的主题使用scss，所以需要安装hugo-extended。
-1.[下载Git](https://git-scm.com/downloads)
-2.[下载golang](https://go.dev/dl/  “All releases - The Go Programming )
-3.[下载hugo-extended](https://gohugo.io/installation/windows/)没有二进制版本，官网推荐是通过包管理工具安装，也可以自行从源代码构建。
-4.验证hugo是否安装成功：  
+1. [下载Git](https://git-scm.com/downloads)
+2. [下载golang](https://go.dev/dl/ )
+3. [下载hugo-extended](https://gohugo.io/installation/windows/)没有二进制版本，官网推荐是通过包管理工具安装，也可以自行从源代码构建。
+4. 验证hugo是否安装成功：  
 ~~~
 hugo version
 ~~~
@@ -99,6 +99,12 @@ git config --global --unset http.proxy
 git config --global --unset https.proxy
 ```
 obsidian和vscode插件的配置单开一篇博客（TODO）。
+
+上传博客时又遇到一个问题，文章不渲染！折腾了一会儿发现hugo不能渲染未来的文章，淦，经典问题。在toml配置文件里加一句：
+```
+buildFuture=true
+```
+解决。
 ### 参考
-[在github.io用hugo部署个人博客，2023新教程 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/649542248)
-[Github——git本地仓库建立与远程连接（最详细清晰版本！附简化步骤与常见错误）_github本地仓库创建-CSDN博客](https://blog.csdn.net/qq_29493173/article/details/113094143)
+1. [在github.io用hugo部署个人博客，2023新教程 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/649542248)
+2. [Github——git本地仓库建立与远程连接（最详细清晰版本！附简化步骤与常见错误）_github本地仓库创建-CSDN博客](https://blog.csdn.net/qq_29493173/article/details/113094143)

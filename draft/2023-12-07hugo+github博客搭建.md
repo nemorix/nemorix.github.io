@@ -1,7 +1,7 @@
 ---
 title: hugo+github博客搭建
 date: 2023-12-07 10:44:49
-lastmod: 2023-12-07 15:45:56
+lastmod: 2023-12-07 16:57:30
 draft: true
 tags:
   - 环境配置
@@ -99,6 +99,12 @@ git config --global --unset http.proxy
 git config --global --unset https.proxy
 ```
 obsidian和vscode插件的配置单开一篇博客（TODO）。
+
+上传博客时又遇到一个问题，文章不渲染！~~开始我以为时github网络问题看，因为发布page后需要一段时间响应变化，但是一会儿过去还是没有文章，不过action显示构建是成功的。于是开始本地调试，发现修改md文件hugo后台会显示文件修改，但是前端就是不渲染，见鬼了。又怀疑是md yaml头的问题，删删改改还是没起作用，再怀疑是obsidian语法的问题，检查一遍没有特殊语法，见鬼了。但是之前的模板文章可以渲染，于是复制能渲染的yaml头，乐，可以渲染，于是一条一条校对格式，校对完还是渲染不了，只能复制yaml头来渲染，这样子可不行，于是再次比对，发现端倪：只有文章的创建时间和修改时间不一致，~~搜了一下发现hugo不能渲染未来的文章，淦，经典问题。在toml配置文件里加一句：
+```
+buildFuture=true
+```
+解决。
 ### 参考
 [在github.io用hugo部署个人博客，2023新教程 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/649542248)
 [Github——git本地仓库建立与远程连接（最详细清晰版本！附简化步骤与常见错误）_github本地仓库创建-CSDN博客](https://blog.csdn.net/qq_29493173/article/details/113094143)
