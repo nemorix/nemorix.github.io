@@ -165,6 +165,11 @@ enableGitInfo = true # use git commit log to generate lastmod record # 可根据
       enabled = true
       local = true
       src = "img/avatar.jpg"
+  params.featuredImageField = 'image'
+  [params.imageProcessing.cover]
+    enable = true
+  [params.imageProcessing.content]
+    enable = true
 
 # 将下面这段配置取消注释可以使 hugo 生成 .md 文件
 # Uncomment these options to make hugo output .md files.
