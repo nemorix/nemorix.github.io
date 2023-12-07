@@ -1,0 +1,51 @@
+<style>
+  @font-face {
+  font-family: "icons-boxes";
+  src: url("../fonts/icons-boxes.eot?bzmaom");
+  src: url("../fonts/icons-boxes.eot?bzmaom#iefix") format("embedded-opentype"),
+    url("../fonts/icons-boxes.ttf?bzmaom") format("truetype"),
+    url("../fonts/icons-boxes.woff?bzmaom") format("woff"),
+    url("../fonts/icons-boxes.svg?bzmaom#icomoon-notices") format("svg");
+  font-display: block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+}
+
+[class^="box"],
+[class*=" box"] {
+  align-items: center;
+  color: #464646;
+  display: flex;
+  font-weight: 400;
+  padding: 0.5em;
+}
+
+[class^="box"]::before {
+  padding-left: 0.4em;
+  padding-right: 0.8em;
+}
+
+.boxInfo:before {
+  color: #00529b;
+  content: "\f05a";
+  font-family: "icons-boxes" !important;
+  font-size: 1.4em;
+}
+
+.boxInfo {
+  background-color: #bde5f8;
+}
+
+.styleInfo {
+  margin-left: calc((var(--card-padding)) * -1);
+  margin-right: calc((var(--card-padding)) * -1);
+  width: calc(100% + var(--card-padding) * 2);
+}
+
+</style>
+<div class="styleInfo">
+  <p class="boxInfo">{{- .Inner | markdownify -}}</p>
+</div>

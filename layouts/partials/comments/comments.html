@@ -1,0 +1,43 @@
+{{ if and .IsPage (ne .Params.comment false) }}
+
+  <!-- Commento -->
+  {{- if .Site.Params.commento.enable -}}
+    {{ partial "comments/provider/commento.html" . }}
+  {{- end }}
+
+  <!-- giscus -->
+  {{ if .Site.Params.giscus.enable }}
+    {{ partial "comments/provider/giscus.html" . }}
+  {{ end }}
+
+  <!-- utteranc -->
+  {{ if .Site.Params.utteranc.enable }}
+    {{ partial "comments/provider/utteranc.html" . }}
+  {{ end }}
+
+  <!-- changyan -->
+  {{- if and .Site.Params.changyanAppid .Site.Params.changyanAppkey -}}
+    {{ partial "comments/provider/changyan.html" . }}
+  {{- end }}
+
+  <!-- Disqus -->
+  {{- if .Site.DisqusShortname -}}
+    {{ partial "comments/provider/disqus.html" . }}
+  {{- end }}
+
+    <!-- LiveRe -->
+  {{- if .Site.Params.livere.uid -}}
+    {{ partial "/provider/livere.html" . }}
+  {{- end }}
+
+  <!-- valine -->
+  {{- if .Site.Params.valine.enable -}}
+    {{ partial "comments/provider/valine.html" . }}
+  {{- end }}
+
+  <!-- Remark42 -->
+  {{- if .Site.Params.remark42Url -}}
+  <div id="remark42"></div>
+  {{- end }}
+
+{{- end }}

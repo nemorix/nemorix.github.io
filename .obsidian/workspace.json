@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "51529048b2617b20",
+        "id": "a0aa2ba5c95ee57e",
         "type": "tabs",
         "children": [
           {
-            "id": "2771103fa71c43f7",
+            "id": "17f9d65c9bfd1a4c",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -44,8 +44,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#第一个稳定",
-                "matchingCase": false,
+                "query": "",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -61,8 +61,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -119,7 +118,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "draft/2023-12-07测试.md"
+              }
             }
           }
         ]
@@ -140,8 +141,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2771103fa71c43f7",
+  "active": "7f1ce9ea9e03bc78",
   "lastOpenFiles": [
+    "draft/2023-12-07测试.md",
+    "draft/2023-12-07测试性博客.md",
     "content/post/2023-12-05.md",
     "content/about.md",
     "content/post/about.md",

@@ -1,16 +1,16 @@
 baseURL = "https://nemorix.github.io"
 defaultContentLanguage = "zh-cn"
-title = "nemorix的blog"
+title = "nemorix"
 enableRobotsTXT = true
 enableEmoji = true
-theme = "jane"
+theme = "hugo-theme-stack"
 
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 10                                             # （可选）首页显示的文章条目数量，默认为10
 disqusShortname = "nemorix"      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
 rssLimit = 20
-# copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
+copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 enableGitInfo = true # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 
 [author]                  # require                       # 必需
@@ -28,7 +28,7 @@ enableGitInfo = true # use git commit log to generate lastmod record # 可根据
   identifier = "home"
   pageref = "/"
 [[menu.main]]
-  name = "全部文章"
+  name = "文章"
   weight = 20
   identifier = "archives"
   pageref = "/post/"
@@ -47,24 +47,14 @@ enableGitInfo = true # use git commit log to generate lastmod record # 可根据
   weight = 45
   identifier = "about"
   url = "/about/"
-[[menu.main]]
-  name = "致谢"
-  weight = 50
-  identifier = "acknowledgments"
-  url = "/acknowledgments/"
-[[menu.main]]
-  name = "订阅"
-  weight = 60
-  identifier = "feed"
-  url = "/index.xml"
 
 [params]
   since = "2023"            # Site creation time          # 站点建立时间
 
   # site info (option)                                    # 站点信息（可选）
-  logoTitle = "N的随笔"        # default: the title value    # 默认值: 上面设置的title值
-  keywords = ["linux", "emacs", "program", "journal", "nemorix", "博客", "笔记"]
-  description = "随便写写"
+  #logoTitle = "N的随笔"        # default: the title value    # 默认值: 上面设置的title值
+  #keywords = ["linux", "game","life", "program", "journal", "nemorix", "博客", "笔记"]
+  #description = "随便写写"
   rssFullContent = true
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目
@@ -74,7 +64,7 @@ enableGitInfo = true # use git commit log to generate lastmod record # 可根据
   dateFormatToUse = "2006-01-02"
 
   # show word count and read time ?                       # 是否显示字数统计与阅读时间
-  moreMeta = false
+  moreMeta = true
 
   # 一些全局开关，你可以在每一篇内容的 front matter 中单独关闭某些选项
   # Some global options, you can close something in front matter.
@@ -85,7 +75,7 @@ enableGitInfo = true # use git commit log to generate lastmod record # 可根据
   linkToMarkDown = false    # if you config contentCopyright and hugo output .md files. # 是否在链接到markdown原始文件（如果你配置了下面的许可协议并允许hugo生成markdown文件）
 
   #contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
-  contentCopyright = '原创文章，如需转载请注明文章作者和出处。谢谢！'
+  contentCopyright = 'nemorix原创文章，如需转载请注明文章作者和出处。谢谢！'
 
   changyanAppid = ""        # Changyan app id             # 畅言
   changyanAppkey = ""       # Changyan app key
@@ -130,12 +120,12 @@ enableGitInfo = true # use git commit log to generate lastmod record # 可根据
     showCommitMessage = true
 
   [params.reward]                                         # 文章打赏
-    enable = true
+    enable = false
     #wechat = "/reward_wechat.png"           # 微信二维码
     # alipay = "/reward_alipay.jpg"           # 支付宝二维码
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:xianmin12@qq.com"
+    #a-email = "mailto:xianmin12@qq.com"
     # b-stack-overflow = "http://localhost:1313"
     # c-twitter = "https://twitter.com/xian_min"
     # d-facebook = "http://localhost:1313"
@@ -149,7 +139,31 @@ enableGitInfo = true # use git commit log to generate lastmod record # 可根据
     # l-tumblr = "http://localhost:1313"
     # m-instagram = "http://localhost:1313"
     # p-coding = "https://coding.net/u/xianmin"
+  [[params.widgets.homepage]]
+    type = "search"
 
+  [[params.widgets.homepage]]
+    type = "archives"
+
+    [params.widgets.homepage.params]
+      limit = 5
+
+  [[params.widgets.homepage]]
+    type = "tag-cloud"
+
+    [params.widgets.homepage.params]
+      limit = 10
+
+  [[params.widgets.page]]
+    type = "toc"
+
+  [params.sidebar]
+    subtitle = "行至水穷处，\n坐看云起时"
+
+    [params.sidebar.avatar]
+      enabled = true
+      local = true
+      src = "img/avatar.jpg"
 
 # 将下面这段配置取消注释可以使 hugo 生成 .md 文件
 # Uncomment these options to make hugo output .md files.
@@ -174,17 +188,34 @@ enableGitInfo = true # use git commit log to generate lastmod record # 可根据
   languageCode = "zh-cn"
 
 [markup]
+    # Markdown renderer configuration
+  [markup.goldmark.renderer]
+    unsafe = true
+
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = true
+    startLevel = 2
+
   [markup.highlight]
-    anchorLineNos = true
+    noClasses = false
     codeFences = true
-    guessSyntax = false
-    hl_Lines = ''
-    hl_inline = false
-    lineAnchors = ''
+    guessSyntax = true
     lineNoStart = 1
     lineNos = true
     lineNumbersInTable = true
-    noClasses = true
-    noHl = false
-    style = 'friendly'
     tabWidth = 4
+[related]
+  # Related contents configuration
+  includeNewer = true
+  threshold = 60
+  toLower = false
+
+  [[indices]]
+    name = "tags"
+    weight = 100
+
+  [[indices]]
+    name = "categories"
+    weight = 200  
+    

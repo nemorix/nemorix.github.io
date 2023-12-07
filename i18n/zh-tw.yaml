@@ -1,115 +1,73 @@
-- id: archive
-  translation: 彙整
+toggleMenu:
+    other: 切換選單
 
-- id: tags
-  translation: 標籤
+darkMode:
+    other: 夜晚模式
 
-- id: tag
-  translation: "標籤： "
+list:
+    page:
+        one: "第 {{ .Count }} 頁"
+        other: "第 {{ .Count }} 頁"
 
-- id: categories
-  translation: 分類
+    section:
+        other: 段落
 
-- id: category
-  translation: "分類： "
+    subsection:
+        one: 小節
+        other: 小節
 
-- id: authors
-  translation: 文章作者
+article:
+    back:
+        other: 返回
 
-- id: author_item
-  translation: "文章作者： "
+    tableOfContents:
+        other: 目錄
 
-# posts
-- id: prev
-  translation: 上一頁
+    relatedContent:
+        other: 相關文章
 
-- id: next
-  translation: 下一頁
+    lastUpdatedOn:
+        other: 最後更新
 
-- id: prev_post
-  translation: 上一篇
+    readingTime:
+        one: "閱讀時間: {{ .Count }} 分鐘"
+        other: "閱讀時間: {{ .Count }} 分鐘"
 
-- id: next_post
-  translation: 下一篇
+notFound:
+    title:
+        other: 404 錯誤
 
-- id: toc
-  translation: 文章目錄
+    subtitle:
+        other: 頁面不存在
 
-- id: readmore
-  translation: 閱讀全文
+widget:
+    archives:
+        title:
+            other: 紀錄
 
-- id: reward
-  translation: 讚賞支持
+        more:
+            other: 更多
 
-- id: rewardAlipay
-  translation: 支付寶打賞
+    tagCloud:
+        title:
+            other: 標籤雲
+    categoriesCloud:
+        title:
+            other: 分類
 
-- id: rewardWechat
-  translation: 微信打賞
+search:
+    title:
+        other: 搜尋
 
-- id: seeMarkDown
-  translation: 查看本文 Markdown 版本 »
+    placeholder:
+        other: 輸入關鍵字...
 
-- id: loadDisqus
-  translation: 顯示 Disqus 評論
+    resultTitle:
+        other: "#PAGES_COUNT 個結果 （用時 #TIME_SECONDS 秒）"
 
-# posts.header
-- id: wordCount
-  translation: 約 {{.Count}} 字
+footer:
+    builtWith:
+        other: 使用 {{ .Generator }} 建立
 
-- id: readingTime
-  translation: 預計閱讀 {{.Count}} 分鐘
-
-# copyright
-- id: author
-  translation: 文章作者
-
-- id: lastMod
-  translation: 上次更新
-
-- id: markdown
-  translation: 原始文檔
-
-- id: license
-  translation: 授權條款
-
-# counter
-- id: counter_archives
-  translation: 共計 {{.Count}} 篇文章
-
-- id: counter_tagcloud
-  translation: 共計 {{.Count}} 個標籤
-
-- id: counter_categories
-  translation: 共計 {{.Count}} 個分類
-
-# other
-- id: morePost
-  translation: 查看更多 >>>
-
-- id: read_en
-  translation: Read in English
-
-- id: read_es
-  translation: Leer en español
-
-- id: read_zh-cn
-  translation: 中文阅读
-
-- id: read_ru
-  translation: Читать на русском
-
-- id: read_pt
-  translation: Leia em português
-
-- id: read_fr
-  translation: Lire en français
-
-- id: read_de
-  translation: Lese in Deutsch
-
-- id: language
-  translation: 語言
-
-- id: comments
-  translation: 評論
+    designedBy:
+        other: 主題 {{ .Theme }} 由 {{ .DesignedBy }} 設計

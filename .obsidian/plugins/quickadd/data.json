@@ -8,12 +8,12 @@
       "templatePath": "templates/hogo.md",
       "fileNameFormat": {
         "enabled": true,
-        "format": "{{DATE:}}"
+        "format": "{{DATE:}}{{value}}"
       },
       "folder": {
         "enabled": true,
         "folders": [
-          "content/post"
+          "draft"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,

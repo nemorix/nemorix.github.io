@@ -1,0 +1,18 @@
+{{ if .Site.Params.widgets.enabled }}
+    {{ $context := . }}
+    <aside class="top-toc">
+        {{ range $widget := .Site.Params.widgets.enabled }}
+            {{ partial (printf "widget/%s" $widget) $context }}
+        {{ end }}
+        <!-- sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1748363845231571"
+     data-ad-slot="3371950059"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </aside>
+{{ end }}

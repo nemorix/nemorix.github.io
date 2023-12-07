@@ -1,115 +1,73 @@
-- id: archive
-  translation: Archive
+toggleMenu:
+    other: Toggle Menu
 
-- id: tags
-  translation: Tags
+darkMode:
+    other: Dark Mode
 
-- id: tag
-  translation: "Tag: "
+list:
+    page:
+        one: "{{ .Count }} page"
+        other: "{{ .Count }} pages"
 
-- id: categories
-  translation: Categories
+    section:
+        other: Section
 
-- id: category
-  translation: "Category: "
+    subsection:
+        one: Subsection
+        other: Subsections
 
-- id: authors
-  translation: Authors
+article:
+    back:
+        other: Back
 
-- id: author_item
-  translation: "Author: "
+    tableOfContents:
+        other: Table of contents
 
-# posts
-- id: prev
-  translation: Prev
+    relatedContent:
+        other: Related content
 
-- id: next
-  translation: Next
+    lastUpdatedOn:
+        other: Last updated on
 
-- id: prev_post
-  translation: Prev
+    readingTime:
+        one: "{{ .Count }} minute read"
+        other: "{{ .Count }} minute read"
 
-- id: next_post
-  translation: Next
+notFound:
+    title:
+        other: Not Found
 
-- id: toc
-  translation: Table of Contents
+    subtitle:
+        other: This page does not exist
 
-- id: readmore
-  translation: Read more
+widget:
+    archives:
+        title:
+            other: Archives
 
-- id: reward
-  translation: Reward
+        more:
+            other: More
 
-- id: rewardAlipay
-  translation: Alipay
+    tagCloud:
+        title:
+            other: Tags
+    categoriesCloud:
+        title:
+            other: Categories
 
-- id: rewardWechat
-  translation: Wechat
+search:
+    title:
+        other: Search
 
-- id: seeMarkDown
-  translation: The Markdown version »
+    placeholder:
+        other: Type something...
 
-- id: loadDisqus
-  translation: Show Disqus Comments
+    resultTitle:
+        other: "#PAGES_COUNT pages (#TIME_SECONDS seconds)"
 
-# posts.header
-- id: wordCount
-  translation: "{{.Count}} words"
+footer:
+    builtWith:
+        other: Built with {{ .Generator }}
 
-- id: readingTime
-  translation: "{{.Count}} min read"
-
-# copyright
-- id: author
-  translation: Author
-
-- id: lastMod
-  translation: LastMod
-
-- id: markdown
-  translation: Markdown
-
-- id: license
-  translation: License
-
-# counter
-- id: counter_archives
-  translation: "{{.Count}} posts In Total"
-
-- id: counter_tagcloud
-  translation: "{{.Count}} Tags In Total"
-
-- id: counter_categories
-  translation: "{{.Count}} Categories In Total"
-
-# other
-- id: morePost
-  translation: "More Post >>>"
-
-- id: read_ru
-  translation: Читать на русском
-
-- id: read_es
-  translation: Leer en español
-
-- id: read_zh-cn
-  translation: 中文阅读
-
-- id: read_zh-tw
-  translation: 中文閱讀
-
-- id: read_pt
-  translation: Leia em português
-
-- id: read_fr
-  translation: Lire en français
-
-- id: read_de
-  translation: In Deutsch lesen
-
-- id: language
-  translation: Language
-
-- id: comments
-  translation: Comments
+    designedBy:
+        other: Theme {{ .Theme }} designed by {{ .DesignedBy }}
