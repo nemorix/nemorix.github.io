@@ -11,8 +11,12 @@
             "id": "17f9d65c9bfd1a4c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "draft/2023-12-07hugo+github博客搭建.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "draft/2023-12-07hugo+github博客搭建.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "draft/2023-12-07hugo+github博客搭建.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "draft/2023-12-07测试.md"
+                "file": "draft/2023-12-07hugo+github博客搭建.md"
               }
             }
           }
@@ -141,8 +147,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7f1ce9ea9e03bc78",
+  "active": "17f9d65c9bfd1a4c",
   "lastOpenFiles": [
+    "draft/github-ssh.png",
+    "draft/20210124183511538.png",
+    "draft/hugo-file-structure.png",
+    "draft/2023-12-07hugo+github博客搭建.md",
+    "Pasted image 20231207122247.png",
+    "draft/hugo-file-structure.md",
+    "draft/Pasted image 20231207121941.png",
+    "Pasted image 20231207122020.png",
+    "Pasted image 20231207121941.png",
     "draft/2023-12-07测试.md",
     "draft/2023-12-07测试性博客.md",
     "content/post/2023-12-05.md",
@@ -170,12 +185,9 @@
     "content/post/demo/1-image.md",
     "content/post/demo",
     "content/post/jane-theme-preview.zh-cn.md",
-    "content/post/jane-theme-preview.md",
     "content/post",
-    "content/posts/how-to-contribute.md",
     "content/posts",
     "content/新建文件夹",
-    "templates/hogo.md",
     "templates/新建文本文档.txt",
     "templates",
     "新建文件夹"

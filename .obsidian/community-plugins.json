@@ -1,4 +1,6 @@
 [
   "quickadd",
-  "templater-obsidian"
+  "templater-obsidian",
+  "obsidian-linter",
+  "obsidian-image-auto-upload-plugin"
 ]
