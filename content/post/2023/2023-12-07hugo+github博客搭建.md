@@ -2,7 +2,7 @@
 title: hugo+github博客搭建
 date: 2023-12-07 10:44:49
 lastmod: 2023-12-07 15:45:56
-draft: true
+draft: false
 tags:
   - 环境配置
 categories:
