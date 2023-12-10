@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/about.md",
+                "file": "content/categories/Games/_index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/about.md",
+                "file": "content/categories/Games/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/about.md",
+                "file": "content/categories/Games/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/about.md"
+                "file": "content/categories/Games/_index.md"
               }
             }
           }
@@ -149,6 +149,8 @@
   },
   "active": "dcf1c491e9a7284f",
   "lastOpenFiles": [
+    "content/categories/Games/game.svg",
+    "content/about.md",
     "layouts/partials/article/components/breadcrumbs-top.html",
     "layouts/partials/article/components/breadcrumbs-bottom.html",
     "layouts/partials/article/components/tags.html",
@@ -159,11 +161,9 @@
     "layouts/partials/article/components/footer.html",
     "layouts/partials/article/components/content.html",
     "layouts/partials/helper/image.html",
-    "layouts/partials/helper/icon.html",
     "content/cover.png",
     "content/1815218a0ab6fb6332182ddb58592e33_720.png",
     "draft/2023-12-07个人简介.md",
-    "content/about.md",
     "content/2023-12-07个人简介.md",
     "resources/_gen/images/categories/Windows-7/windows-7_hua9945e54b1de6fdaf3f844d1e822c583_3464_60x60_fill_q75_h2_box_smart1_2.webp",
     "resources/_gen/images/categories/Windows-11/Windows-11_hu3abe1ff023f01ec83923d34308cf3929_638_60x60_fill_q75_h2_box_smart1_2.webp",
