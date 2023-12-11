@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/categories/Games/_index.md",
+                "file": "draft/2023-12-10辐射76刷等级和赛季.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/categories/Games/_index.md",
+                "file": "draft/2023-12-10辐射76刷等级和赛季.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/categories/Games/_index.md",
+                "file": "draft/2023-12-10辐射76刷等级和赛季.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/categories/Games/_index.md"
+                "file": "draft/2023-12-10辐射76刷等级和赛季.md"
               }
             }
           }
@@ -149,6 +149,8 @@
   },
   "active": "dcf1c491e9a7284f",
   "lastOpenFiles": [
+    "content/categories/Games/_index.md",
+    "draft/2023-12-10辐射76刷等级和赛季.md",
     "content/categories/Games/game.svg",
     "content/about.md",
     "layouts/partials/article/components/breadcrumbs-top.html",
@@ -172,7 +174,6 @@
     "resources/_gen/images/categories/Video-Editor/video-editor_hu0e5105778f7697b3281ce034d9970ef2_30570_60x60_fill_q75_h2_box_smart1_2.webp",
     "resources/_gen/images/categories/Tutorial/tutorial_hu9c7cb31a48077fe90c90366ce443ad41_9670_60x60_fill_q75_h2_box_smart1_2.webp",
     "resources/_gen/images/categories/rclone/rclone_huf3c77660285fc43e45db3d638a1ce360_3056_60x60_fill_q75_h2_box_smart1_2.webp",
-    "resources/_gen/images/categories/Linux/linux_hue390eac5c2e9851fb4e91325129a4298_10706_60x60_fill_q75_h2_box_smart1_2.webp",
     "draft/2023-12-07hugo+github博客搭建.md",
     "content/post/2023/12/2023-12-07hugo+github博客搭建.md",
     "draft/hugo-file-structure.md",
@@ -193,7 +194,6 @@
     "content/post/demo/7-shortcodes-preview.md",
     "content/post/demo/6-shortcode-notice.md",
     "content/post/demo/5-math.md",
-    "content/post/demo/4-footnote.md",
-    "content/post/demo/3-syntax-highlighting.md"
+    "content/post/demo/4-footnote.md"
   ]
 }
